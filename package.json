@@ -1,0 +1,13 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir dist && cp index.html dist/",
+    "start": "http-server ."
+  },
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}
