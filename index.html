@@ -3,210 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HusoNode Validator</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        body {
-            background: #0a1a0f;
-            min-height: 100vh;
-            overflow-x: hidden;
-        }
-
-        .header {
-            background: rgba(0, 40, 20, 0.9);
-            padding: 1rem;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0, 255, 128, 0.2);
-        }
-
-        .logo {
-            color: #00ff80;
-            font-size: 2rem;
-            font-weight: bold;
-            text-shadow: 0 0 10px rgba(0, 255, 128, 0.5);
-        }
-
-        .container {
-            padding-top: 100px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            padding-bottom: 2rem;
-        }
-
-        .project-bubble {
-            background: rgba(0, 40, 20, 0.8);
-            border-radius: 15px;
-            padding: 1.5rem;
-            width: 280px;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid rgba(0, 255, 128, 0.3);
-        }
-
-        .project-bubble:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 255, 128, 0.3);
-        }
-
-        .project-img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-
-        .project-title {
-            color: #00ff80;
-            font-size: 1.2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-info {
-            color: #80ffb2;
-            font-size: 0.9rem;
-            line-height: 1.4;
-        }
-
-        .stats {
-            margin-top: 1rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(0, 255, 128, 0.2);
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .stat {
-            color: #00ff80;
-            font-size: 0.8rem;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .particles {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        .particle {
-            position: absolute;
-            background: rgba(0, 255, 128, 0.1);
-            border-radius: 50%;
-        }
-    </style>
+    <meta name="description" content="HusoNode - Güvenilir, hızlı ve ölçeklenebilir node çözümleriyle tanışın.">
+    <title>HusoNode - Geleceğin Node Çözümü</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="particles"></div>
-    <header class="header">
-        <div class="logo">HusoNode Validator</div>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-white shadow-md py-6">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-extrabold text-gray-800">HusoNode</h1>
+            <p class="mt-4 text-lg">Geleceğin node altyapısı ile tanışın: Hızlı, güvenilir ve tamamen ölçeklenebilir.</p>
+            <a href="#contact" class="mt-6 inline-block bg-blue-600 text-white px-8 py-3 rounded-2xl text-lg hover:bg-blue-700 transition">Şimdi Başla</a>
+        </div>
     </header>
-    <div class="container">
-        <div class="project-bubble">
-            <img src="/api/placeholder/260/150" alt="Cosmos Hub" class="project-img">
-            <h3 class="project-title">Cosmos Hub</h3>
-            <p class="project-info">Internet of Blockchains'in merkezi. Güvenli ve ölçeklenebilir blockchain ağı.</p>
-            <div class="stats">
-                <span class="stat">APR: 21.5%</span>
-                <span class="stat">Uptime: 99.9%</span>
+
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">HusoNode Özellikleri</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+                <h3 class="text-2xl font-semibold mb-4">Üst Düzey Performans</h3>
+                <p>HusoNode, en yüksek hız ve düşük gecikme süresiyle projelerinizi destekler.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+                <h3 class="text-2xl font-semibold mb-4">%99.99 Uptime Garantisi</h3>
+                <p>Kesintisiz hizmet ile projeleriniz her zaman erişilebilir kalır.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg text-center">
+                <h3 class="text-2xl font-semibold mb-4">Kolay Entegrasyon</h3>
+                <p>Docker ve modern API desteği sayesinde kurulum ve yönetim çok daha kolay.</p>
             </div>
         </div>
+    </section>
 
-        <div class="project-bubble">
-            <img src="/api/placeholder/260/150" alt="Osmosis" class="project-img">
-            <h3 class="project-title">Osmosis</h3>
-            <p class="project-info">Cosmos ekosisteminin önde gelen DEX'i. Yüksek likidite ve düşük ücretler.</p>
-            <div class="stats">
-                <span class="stat">APR: 23.8%</span>
-                <span class="stat">Uptime: 99.8%</span>
-            </div>
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Neden HusoNode?</h2>
+            <p class="mb-6 text-lg">HusoNode, blokzincir projeleri için optimize edilmiş altyapısı sayesinde güvenilir, esnek ve hızlı çözümler sunar. Projelerinizi bir üst seviyeye taşıyın.</p>
+            <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-2xl text-lg hover:bg-gray-100 transition">Detaylı Bilgi</a>
         </div>
+    </section>
 
-        <div class="project-bubble">
-            <img src="/api/placeholder/260/150" alt="Juno" class="project-img">
-            <h3 class="project-title">Juno</h3>
-            <p class="project-info">Akıllı sözleşme platformu. CosmWasm destekli geliştirici dostu ekosistem.</p>
-            <div class="stats">
-                <span class="stat">APR: 25.2%</span>
-                <span class="stat">Uptime: 99.9%</span>
-            </div>
+    <section id="contact" class="container mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">İletişime Geçin</h2>
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow-lg">
+            <p class="text-center text-lg mb-4">HusoNode hakkında daha fazla bilgi almak için bizimle iletişime geçin.</p>
+            <ul class="text-center space-y-4">
+                <li>📧 <a href="mailto:contact@0xhub.xyz" class="text-blue-600 hover:underline">contact@0xhub.xyz</a></li>
+                <li>📞 <a href="tel:+905534289722" class="text-blue-600 hover:underline">+90 553 428 9722</a></li>
+            </ul>
         </div>
-    </div>
+    </section>
 
-    <script>
-        // Parçacık animasyonu
-        function createParticles() {
-            const particlesContainer = document.querySelector('.particles');
-            const particleCount = 30;
-
-            for (let i = 0; i < particleCount; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                
-                const size = Math.random() * 5 + 2;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
-                
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                
-                particlesContainer.appendChild(particle);
-                
-                gsap.to(particle, {
-                    y: 'random(-100, 100)',
-                    x: 'random(-100, 100)',
-                    duration: 'random(3, 7)',
-                    repeat: -1,
-                    yoyo: true,
-                    ease: 'none'
-                });
-            }
-        }
-
-        // Proje baloncuklarına hover efekti
-        const bubbles = document.querySelectorAll('.project-bubble');
-        bubbles.forEach(bubble => {
-            bubble.addEventListener('mouseover', () => {
-                gsap.to(bubble, {
-                    scale: 1.05,
-                    duration: 0.3,
-                    ease: 'power2.out'
-                });
-            });
-
-            bubble.addEventListener('mouseout', () => {
-                gsap.to(bubble, {
-                    scale: 1,
-                    duration: 0.3,
-                    ease: 'power2.out'
-                });
-            });
-        });
-
-        // Sayfa yüklendiğinde parçacıkları oluştur
-        createParticles();
-    </script>
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 HusoNode. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
 </body>
 </html>
